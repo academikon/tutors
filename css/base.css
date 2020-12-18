@@ -175,41 +175,13 @@ p {
     box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
 }
 
-/*abro- textos codigo dca*/
-.uk-modal-titlea {
-
-    margin: 0 0 20px 0;
-    font-size: 2rem;
-    line-height: 1.3;
-    font-weight: auto;
-    color: #ffffff;
-    text-transform: none;
-}
-
-.uk-modal-titleb {
-
-    margin: 0 0 20px 0;
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: auto;
-    color: #ffffff;
-    text-transform: none;
-}
-
-.uk-card-defaulta {
-
-    display: flow-root;
-    padding: 15px 30px;
-    background: #ff8425;
-    background-image: linear-gradient(to top, #20c4cc 0%, #6713d2 100%);
-}
-
-/*cierro- textos codigo dca*/
 
 .uk-card-default {
-    background: #ff8425;
-    color: #f8f8f8 !important;
+    display: contents "";
+    padding: 10px 30px;
     background-image: linear-gradient(to top, #20c4cc 0%, #6713d2 100%);
+}
+
 }
 
 
@@ -360,6 +332,75 @@ p {
 }
 
 #Button-Blue:hover::after {
+    height: 100%;
+    opacity: 1;
+}
+
+/* cierro codigos dca*/
+
+#Button-exit {
+    display: block;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #ffff;
+    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
+    box-shadow: 0px 0px 10px #ff5858;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: auto;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+/* abro codigos dca*/
+
+#Button-exit:before {
+    content: "Leyendo...";
+    position: relative;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+    transition: all .25s;
+    z-index: -1;
+
+}
+
+#Button-exit:after {
+    content: "Terminado";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
+    transition: all .25s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#Button-exit:hover {
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+#Button-exit:hover::before {
+    height: 100%;
+    opacity: 0;
+}
+
+#Button-exit:hover::after {
     height: 100%;
     opacity: 1;
 }
