@@ -1,0 +1,367 @@
+#blog-photo-auto {
+    object-fit: cover;
+    object-position: 100% 50%;
+    width: 100%;
+    height: 250px;
+}
+
+.uk-border-rounded {
+    border-radius: 25px;
+}
+
+.uk-card-default .uk-card-title {
+    color: #ffffff;
+}
+
+/* codigos dago*/
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.uk-contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1f));
+    width: 95% margin: auto;
+    grid-gap: 10px
+}
+
+.contenedora {
+    display: flex;
+    width: 1000px;
+    height: 50px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    position: absolute;
+    top: AUTO;
+    right: auto;
+    bottom: 203px;
+    left: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+ula {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+}
+
+ula,
+p {
+    margin: 0;
+}
+
+@keyframes cambiar {
+
+    0% {
+        margin-top: 0;
+    }
+
+
+    50% {
+        margin-top: -50px
+    }
+
+
+    75% {
+        margin-top: -99px
+    }
+
+    100% {
+        margin-top: 0;
+    }
+
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.contenedor figure {
+    position: relative;
+    height: auto;
+    cursor: pointer;
+    width: auto;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.contenedor figure img {
+    width: auto;
+    height: 100%;
+    transition: all 700ms ease-out;
+}
+
+.contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #69d2e78f;
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+}
+
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contenedor figure:hover > img {
+    transform: scale(1.2);
+}
+
+.contenedor figure .capa h3 {
+    color: #fff;
+    font-weight: 10px;
+    margin-bottom: auto;
+    transition: all 200ms ease-out;
+    margin-top: auto;
+}
+
+.contenedor figure .capa p {
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 1.2;
+    width: auto;
+    max-width: auto;
+    margin: auto;
+}
+}
+
+/*Cierre- continua codigo*/
+
+.uk-grid-collapse > *,
+.uk-grid-column-collapse > * {
+    padding-left: 30px;
+}
+
+.uk-navbar-container {
+    transition: background-color 0.5s ease;
+}
+
+#change-her-the-bg-image {
+    background: linear-gradient(to right, #fa6a0a9e, hsl(21deg 89% 93% / 0%)), url(../media/B8.jpg);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+.uk-overlay-primary {
+    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
+
+}
+
+.uk-card-secondary {
+    background: rgb(254 165 115);
+    color: #fff;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
+}
+
+/*abro- textos codigo dca*/
+.uk-modal-titlea {
+
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: auto;
+    color: #ffffff;
+    text-transform: none;
+}
+
+.uk-modal-titleb {
+
+    margin: 0 0 20px 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: auto;
+    color: #ffffff;
+    text-transform: none;
+}
+
+.uk-card-defaulta {
+
+    display: flow-root;
+    padding: 15px 30px;
+    background: #ff8425;
+    background-image: linear-gradient(to top, #20c4cc 0%, #6713d2 100%);
+}
+
+/*cierro- textos codigo dca*/
+
+.uk-card-default {
+    background: #ff8425;
+    color: #f8f8f8 !important;
+    background-image: linear-gradient(to top, #20c4cc 0%, #6713d2 100%);
+}
+
+
+.uk-button-warning {
+    background-color: #ffffff00;
+    color: #fff;
+    border: 3px solid #f8f8f8;
+}
+
+.uk-card-primary.uk-card-body,
+.uk-card-primary > :not([class*=uk-card-media]),
+.uk-card-secondary.uk-card-body,
+.uk-card-secondary > :not([class*=uk-card-media]),
+.uk-light,
+.uk-offcanvas-bar,
+.uk-overlay-primary,
+.uk-section-primary:not(.uk-preserve-color),
+.uk-section-secondary:not(.uk-preserve-color),
+.uk-tile-primary:not(.uk-preserve-color),
+.uk-tile-secondary:not(.uk-preserve-color) {
+    color: rgb(255 255 255);
+}
+
+}
+
+.uk-animation-zoom-onhover:hover {
+    transition: 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transform: 2s;
+    transform: translateY(10%);
+}
+
+.skew-right {
+    transform: skewY(4deg);
+}
+
+.skew-left {
+    transform: skewY(-4deg);
+}
+
+.skew {
+    height: 100px;
+    margin-top: -50px;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scroll::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scroll::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #1e87f0;
+    border-radius: 50px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #ff9700;
+    border-radius: 50px;
+    transition: color .3s ease;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+/*Estilos estándar experimentales (Principalmente Firefox)*/
+
+.scroll {
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+#Button-Blue {
+    display: block;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #ffff;
+    background-image: linear-gradient(to right, rgb(23, 228, 243), rgb(0, 141, 235));
+    box-shadow: 0px 15px 25px rgb(0 141 235 / 42%);
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: auto;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+/* abro codigos dca*/
+
+#Button-Blue:before {
+    content: "¡Quiero!";
+    position: relative;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+    transition: all .25s;
+    z-index: -1;
+
+}
+
+#Button-Blue:after {
+    content: "¿Me eliges?";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, rgb(23, 228, 243), rgb(0, 141, 235));
+    transition: all .25s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#Button-Blue:hover {
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+#Button-Blue:hover::before {
+    height: 100%;
+    opacity: 0;
+}
+
+#Button-Blue:hover::after {
+    height: 100%;
+    opacity: 1;
+}
+
+/* cierro codigos dca*/
