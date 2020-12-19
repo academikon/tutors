@@ -144,6 +144,14 @@ p {
     max-width: auto;
     margin: auto;
 }
+
+
+.righta {
+    max-width: none;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transform: translate(-5px, 6px);
 }
 
 /*Cierre- continua codigo*/
@@ -157,17 +165,13 @@ p {
     transition: background-color 0.5s ease;
 }
 
-#change-her-the-bg-image {
-    background: linear-gradient(to right, #fa6a0a9e, hsl(21deg 89% 93% / 0%)), url(../media/B8.jpg);
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover;
-}
+
 
 .uk-overlay-primary {
     background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
 
 }
+
 
 .uk-card-secondary {
     background: rgb(254 165 115);
@@ -373,7 +377,7 @@ p {
     border-radius: 6px;
     transition: all .25s;
     z-index: -1;
-
+    background: #fff
 }
 
 #Button-exit:after {
@@ -403,6 +407,37 @@ p {
 #Button-exit:hover::after {
     height: 100%;
     opacity: 1;
+}
+
+.animate-svg {
+    width: 1200px;
+    margin: 0;
+}
+
+.animate-svg svg {
+    stroke-width: .6px;
+    stroke: #000;
+    width: 100%;
+    height: 100%;
+    stroke-dashoffset: 250;
+    stroke-dasharray: 1000;
+    animation: svganimation 5s ease-in-out forwards infinite;
+
+}
+
+@keyframes svganimation {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    70% {
+        stroke-dashoffset: 0;
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+}
 }
 
 /* cierro codigos dca*/
