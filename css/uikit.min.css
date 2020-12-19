@@ -7463,7 +7463,7 @@ iframe.uk-cover {
 
 [class*=uk-position-center-left],
 [class*=uk-position-center-right] {
-    top: 60%;
+    top: 30%;
     transform: translateX(150%);
 }
 

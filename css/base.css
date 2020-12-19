@@ -149,8 +149,8 @@ p {
 .righta {
     max-width: none;
     position: absolute;
-    left: 60%;
-    top: 40%;
+    left: 57%;
+    top: 69%;
     transform: translate(-5px, 6px);
 }
 
@@ -377,7 +377,7 @@ p {
     border-radius: 6px;
     transition: all .25s;
     z-index: -1;
-    background: #fff
+
 }
 
 #Button-exit:after {
