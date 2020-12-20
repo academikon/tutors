@@ -166,16 +166,6 @@ p {
 }
 
 
-.righta {
-    max-width: none;
-    position: absolute;
-    left: 57%;
-    top: 73%;
-    transform: translate(-5px, 6px);
-    margin-right: 20px;
-}
-
-
 .uk-card-defaultb {
     background-color: #2d2d2dcf;
     padding: 10px 30px;
@@ -184,7 +174,16 @@ p {
 
 }
 
-.rightb {
+.movea {
+    max-width: none;
+    position: absolute;
+    left: 57%;
+    top: 73%;
+    transform: translate(-5px, 6px);
+    margin-right: 20px;
+}
+
+.moveb {
 
     max-width: none;
     position: absolute;
@@ -194,6 +193,23 @@ p {
     margin-right: -90px;
 }
 
+.movec {
+    max-width: none;
+    position: relative;
+    left: 0%;
+    top: -5%;
+    transform: translate(20px, 20px);
+    margin-right: 20px;
+}
+
+.movee {
+    max-width: none;
+    position: relative;
+    left: 30%;
+    top: -15%;
+    transform: translate(-50px, 50px);
+    margin-right: -90px;
+}
 
 /*Cierre- continua codigo*/
 
@@ -505,3 +521,4 @@ p {
 
 
 /* cierro codigos dca*/
+
