@@ -33,15 +33,16 @@
     display: flex;
     width: 1000px;
     height: 50px;
-    color: #fff;
-    font-size: 40px;
+    color: #222;
+    font-size: 48px;
     line-height: 50px;
     position: absolute;
     top: AUTO;
     right: auto;
-    bottom: 203px;
+    bottom: 20px;
     left: auto;
     margin: auto;
+    font-weight: 800;
     overflow: hidden;
 }
 
@@ -58,25 +59,44 @@ p {
 
 @keyframes cambiar {
 
+
     0% {
         margin-top: 0;
     }
 
+    20% {
+        margin-top: 0px
+    }
+
+    30% {
+        margin-top: 0px
+    }
+
+    40% {
+        margin-top: -50px
+    }
 
     50% {
         margin-top: -50px
     }
 
 
-    75% {
+
+    60% {
         margin-top: -99px
     }
 
+    80% {
+        margin-top: -99px
+    }
+
+
     100% {
-        margin-top: 0;
+        margin-top: 0px;
     }
 
 }
+
 
 .contenedor {
     width: 100%;
@@ -92,7 +112,7 @@ p {
     cursor: pointer;
     width: auto;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 20px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
 
@@ -107,7 +127,7 @@ p {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #69d2e78f;
+    background: #43079ba3;
     transition: all 600ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -150,11 +170,35 @@ p {
     max-width: none;
     position: absolute;
     left: 57%;
-    top: 69%;
+    top: 75%;
     transform: translate(-5px, 6px);
+    margin-right: 20px;
 }
 
+
+.uk-card-defaultb {
+    background-color: #2d2d2dcf;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+
+.rightb {
+
+    max-width: none;
+    position: absolute;
+    left: 45%;
+    top: -1%;
+    transform: translate(-50px, 50px);
+    margin-right: -90px;
+}
+
+
 /*Cierre- continua codigo*/
+
+
+
 
 .uk-grid-collapse > *,
 .uk-grid-column-collapse > * {
@@ -168,7 +212,7 @@ p {
 
 
 .uk-overlay-primary {
-    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
+    background-image: linear-gradient(-1deg, #ffffff00 0%, #ff5858 70%);
 
 }
 
@@ -183,8 +227,18 @@ p {
 .uk-card-default {
     display: contents "";
     padding: 10px 30px;
-    background-image: linear-gradient(to top, #20c4cc 0%, #6713d2 100%);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #9b9b9b;
+    border-radius: 20px;
+
 }
+
+.uk-card-defaulta {
+    background-color: #2d2d2d;
+    display: contents "";
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
 
 }
 
@@ -273,6 +327,8 @@ p {
     scrollbar-width: thin;
 }
 
+/* abro codigos dca*/
+
 #Button-Blue {
     display: block;
     width: 150px;
@@ -295,8 +351,6 @@ p {
     overflow: hidden;
 
 }
-
-/* abro codigos dca*/
 
 #Button-Blue:before {
     content: "¡Quiero!";
@@ -420,24 +474,34 @@ p {
     width: 100%;
     height: 100%;
     stroke-dashoffset: 250;
-    stroke-dasharray: 1000;
-    animation: svganimation 5s ease-in-out forwards infinite;
+    stroke-dasharray: 520;
+    animation-duration: 20s;
+    animation-name: svganimation;
+    animation-iteration-count: infinite;
+
 
 }
+
 
 @keyframes svganimation {
     0% {
-        stroke-dashoffset: 1000;
-    }
-
-    70% {
         stroke-dashoffset: 0;
+    }
 
-        100% {
-            stroke-dashoffset: 0;
-        }
+    40% {
+        stroke-dashoffset: 1560;
+    }
+
+    80% {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 3120;
+        fill: #000;
     }
 }
-}
+
 
 /* cierro codigos dca*/
