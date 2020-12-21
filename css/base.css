@@ -177,19 +177,21 @@ p {
 .movea {
     max-width: none;
     position: absolute;
-    left: 57%;
+    left: 20px;
     top: 73%;
-    transform: translate(-5px, 6px);
     margin-right: 20px;
 }
 
 .moveb {
 
     max-width: none;
+
     position: absolute;
-    left: 45%;
-    top: -1%;
-    transform: translate(-50px, 50px);
+
+    left: 40px;
+
+    top: 20%;
+
     margin-right: -90px;
 }
 
@@ -209,6 +211,12 @@ p {
     top: -15%;
     transform: translate(-50px, 50px);
     margin-right: -90px;
+}
+
+.movef {
+    position: initial;
+    left: -50%;
+    top: 20%;
 }
 
 /*Cierre- continua codigo*/
@@ -438,15 +446,17 @@ p {
 /* abro codigos dca*/
 
 #Button-exit:before {
-    content: "Leyendo...";
+   content: "Leyendo";
     position: relative;
     width: 100%;
     height: 0;
     left: 0;
     bottom: 0;
+    border: 1px solid #ffff transparent;
     border-radius: 6px;
-    transition: all .25s;
-    z-index: -1;
+    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
+   
+   
 
 }
 
@@ -457,6 +467,7 @@ p {
     height: 0;
     left: 0;
     bottom: 0;
+   
     border-radius: 6px;
     background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
     transition: all .25s;
@@ -465,7 +476,8 @@ p {
 }
 
 #Button-exit:hover {
-    border: 1px solid transparent;
+    border: 1px solid #ffff;
+
     color: #fff;
 }
 
@@ -519,6 +531,6 @@ p {
     }
 }
 
-
 /* cierro codigos dca*/
+
 
