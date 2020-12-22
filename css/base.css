@@ -6,7 +6,7 @@
 }
 
 .uk-border-rounded {
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .uk-card-default .uk-card-title {
@@ -183,15 +183,10 @@ p {
 }
 
 .moveb {
-
     max-width: none;
-
     position: absolute;
-
     left: 40px;
-
-    top: 20%;
-
+    top: 33%;
     margin-right: -90px;
 }
 
@@ -214,9 +209,22 @@ p {
 }
 
 .movef {
-    position: initial;
-    left: -50%;
-    top: 20%;
+    max-width: none;
+    position: absolute;
+    left: 350px;
+    top: -3%;
+    transform: translate(20px, 20px);
+    margin-right: 20px;
+}
+
+.move-logo {
+    max-width: none;
+    position: absolute;
+    left: 3px;
+    top: 50px;
+    transform: translate(20px, 20px);
+    margin-right: 20px;
+
 }
 
 /*Cierre- continua codigo*/
@@ -249,12 +257,11 @@ p {
 
 
 .uk-card-default {
-    display: contents "";
+    background-color: #f0f8ff80;
     padding: 10px 30px;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px #9b9b9b;
     border-radius: 20px;
-
 }
 
 .uk-card-defaulta {
@@ -432,7 +439,7 @@ p {
     color: #ffffff;
     cursor: pointer;
     margin: auto;
-    transition: all .25s;
+    transition: all .5s;
     z-index: 1;
     position: relative;
     text-transform: uppercase;
@@ -446,7 +453,7 @@ p {
 /* abro codigos dca*/
 
 #Button-exit:before {
-   content: "Leyendo";
+    content: "Leyendo";
     position: relative;
     width: 100%;
     height: 0;
@@ -454,9 +461,6 @@ p {
     bottom: 0;
     border: 1px solid #ffff transparent;
     border-radius: 6px;
-    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
-   
-   
 
 }
 
@@ -467,17 +471,14 @@ p {
     height: 0;
     left: 0;
     bottom: 0;
-   
     border-radius: 6px;
-    background-image: linear-gradient(-90deg, #ff5858 0%, #f09819 40%);
-    transition: all .25s;
+    transition: all .5s;
     z-index: -1;
     opacity: 0;
 }
 
 #Button-exit:hover {
     border: 1px solid #ffff;
-
     color: #fff;
 }
 
@@ -491,46 +492,91 @@ p {
     opacity: 1;
 }
 
-.animate-svg {
-    width: 1200px;
-    margin: 0;
+/*Inicio de Menù lateral*/
+/*Menù lateral*/
+#btn-menu {
+    display: none;
 }
 
-.animate-svg svg {
-    stroke-width: .6px;
-    stroke: #000;
+.container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 100%;
-    stroke-dashoffset: 250;
-    stroke-dasharray: 520;
-    animation-duration: 20s;
-    animation-name: svganimation;
-    animation-iteration-count: infinite;
-
-
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
-
-@keyframes svganimation {
-    0% {
-        stroke-dashoffset: 0;
-    }
-
-    40% {
-        stroke-dashoffset: 1560;
-    }
-
-    80% {
-        stroke-dashoffset: 3120;
-        fill: transparent;
-    }
-
-    100% {
-        stroke-dashoffset: 3120;
-        fill: #000;
-    }
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
 }
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1ccf;
+    background-color: rgba(28, 28, 28, 0.81);
+
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #ff5858c2;
+    background: #1e87f0b8;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*Fin de Menù lateral*/
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 40px;
+    background-color: #f87c5d94;
+    border: 1px solid #ffff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
 
 /* cierro codigos dca*/
-
-
