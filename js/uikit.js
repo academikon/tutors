@@ -1,5 +1,25 @@
 /*! UIkit 3.5.7 | https://www.getuikit.com | (c) 2014 - 2020 YOOtheme | MIT License */
 
+barba.init({
+	transitions: [{
+		name: 'prueba',
+		leave: function(data){
+			var done = this.async();
+			document.body.classList.add('loading');
+			setTimeout(function(){
+				done();
+			},400);
+		},
+		enter:
+		function(data){
+			var done = this.async();
+			done();
+			setTimeout(function(){
+				document.body.classList.remove('loading');
+			},400);
+		}
+	}]
+});
 
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -186,15 +206,13 @@
     }
 
     function toNodes(element) {
-        return isNode(element) ?
-            [element] :
+        return isNode(element) ? [element] :
             isNodeCollection(element) ?
             arrPrototype.slice.call(element) :
             isArray(element) ?
             element.map(toNode).filter(Boolean) :
             isJQuery(element) ?
-            element.toArray() :
-            [];
+            element.toArray() : [];
     }
 
     function toWindow(element) {
@@ -220,8 +238,7 @@
                 return isNumeric(value) ?
                     toNumber(value) :
                     toBoolean(value.trim());
-            }) :
-            [value];
+            }) : [value];
     }
 
     function toMs(time) {
@@ -839,8 +856,7 @@
             target.map(toEventTarget).filter(Boolean) :
             isString(target) ?
             findAll(target) :
-            isEventTarget(target) ?
-            [target] :
+            isEventTarget(target) ? [target] :
             toNodes(target);
     }
 
@@ -2012,9 +2028,7 @@
         if (pos.length === 1) {
             pos = x.test(pos[0]) ?
                 pos.concat('center') :
-                y.test(pos[0]) ?
-                ['center'].concat(pos) :
-                ['center', 'center'];
+                y.test(pos[0]) ? ['center'].concat(pos) : ['center', 'center'];
         }
 
         return {
@@ -2348,8 +2362,7 @@
             parentVal ?
             parentVal.concat(childVal) :
             isArray(childVal) ?
-            childVal :
-            [childVal] :
+            childVal : [childVal] :
             parentVal;
     }
 
@@ -2400,8 +2413,7 @@
 
         try {
 
-            return !options ?
-                {} :
+            return !options ? {} :
                 startsWith(options, '{') ?
                 JSON.parse(options) :
                 args.length && !includes(options, ':') ?
@@ -2699,7 +2711,8 @@
     }
 
     var IntersectionObserver = inBrowser && window.IntersectionObserver ||
-        /*@__PURE__*/ (function () {
+        /*@__PURE__*/
+        (function () {
             function IntersectionObserverClass(callback, ref) {
                 var this$1 = this;
                 if (ref === void 0) ref = {};
@@ -5333,8 +5346,7 @@
 
                     return {
                         scrolled: this.parallax ?
-                            scrolledOver(this.$el, height$1 ? height$1 - height(this.$el) : 0) * Math.abs(this.parallax) :
-                            false
+                            scrolledOver(this.$el, height$1 ? height$1 - height(this.$el) : 0) * Math.abs(this.parallax) : false
                     };
                 },
 
@@ -7597,8 +7609,7 @@
         update: {
 
             read: function () {
-                return isVisible(this.$el) && this.width && this.height ?
-                    {
+                return isVisible(this.$el) && this.width && this.height ? {
                         width: width(this.$el.parentNode),
                         height: this.height
                     } :
@@ -8587,8 +8598,7 @@
         update: {
 
             read: function () {
-                return includes(this.mode, 'media') && this.media ?
-                    {
+                return includes(this.mode, 'media') && this.media ? {
                         match: this.matchMedia
                     } :
                     false;
@@ -8909,11 +8919,9 @@
                     return el.parentNode && i in propsFrom ?
                         propsFrom[i] ?
                         isVisible(el) ?
-                        getPositionWithMargin(el) :
-                        {
+                        getPositionWithMargin(el) : {
                             opacity: 0
-                        } :
-                        {
+                        } : {
                             opacity: isVisible(el) ? 1 : 0
                         } :
                         false;
@@ -10119,8 +10127,7 @@
                         easing: force ?
                             next.offsetWidth < 600 ?
                             'cubic-bezier(0.25, 0.46, 0.45, 0.94)' /* easeOutQuad */ :
-                            'cubic-bezier(0.165, 0.84, 0.44, 1)' /* easeOutQuart */ :
-                            this.easing
+                            'cubic-bezier(0.165, 0.84, 0.44, 1)' /* easeOutQuart */ : this.easing
                     }, this.transitionOptions)
                 );
 
@@ -12006,25 +12013,23 @@
         pull: {
 
             show: function (dir) {
-                return dir < 0 ?
-                    [
-                        {
-                            transform: translate(30),
-                            zIndex: -1
+                return dir < 0 ? [
+                    {
+                        transform: translate(30),
+                        zIndex: -1
                         },
-                        {
-                            transform: translate(),
-                            zIndex: 0
+                    {
+                        transform: translate(),
+                        zIndex: 0
                         }
-                    ] :
-                    [
-                        {
-                            transform: translate(-100),
-                            zIndex: 0
+                    ] : [
+                    {
+                        transform: translate(-100),
+                        zIndex: 0
                         },
-                        {
-                            transform: translate(),
-                            zIndex: -1
+                    {
+                        transform: translate(),
+                        zIndex: -1
                         }
                     ];
             },
@@ -12036,25 +12041,23 @@
             },
 
             translate: function (percent, dir) {
-                return dir < 0 ?
-                    [
-                        {
-                            transform: translate(30 * percent),
-                            zIndex: -1
+                return dir < 0 ? [
+                    {
+                        transform: translate(30 * percent),
+                        zIndex: -1
                         },
-                        {
-                            transform: translate(-100 * (1 - percent)),
-                            zIndex: 0
+                    {
+                        transform: translate(-100 * (1 - percent)),
+                        zIndex: 0
                         }
-                    ] :
-                    [
-                        {
-                            transform: translate(-percent * 100),
-                            zIndex: 0
+                    ] : [
+                    {
+                        transform: translate(-percent * 100),
+                        zIndex: 0
                         },
-                        {
-                            transform: translate(30 * (1 - percent)),
-                            zIndex: -1
+                    {
+                        transform: translate(30 * (1 - percent)),
+                        zIndex: -1
                         }
                     ];
             }
@@ -12064,25 +12067,23 @@
         push: {
 
             show: function (dir) {
-                return dir < 0 ?
-                    [
-                        {
-                            transform: translate(100),
-                            zIndex: 0
+                return dir < 0 ? [
+                    {
+                        transform: translate(100),
+                        zIndex: 0
                         },
-                        {
-                            transform: translate(),
-                            zIndex: -1
+                    {
+                        transform: translate(),
+                        zIndex: -1
                         }
-                    ] :
-                    [
-                        {
-                            transform: translate(-30),
-                            zIndex: -1
+                    ] : [
+                    {
+                        transform: translate(-30),
+                        zIndex: -1
                         },
-                        {
-                            transform: translate(),
-                            zIndex: 0
+                    {
+                        transform: translate(),
+                        zIndex: 0
                         }
                     ];
             },
@@ -12094,25 +12095,23 @@
             },
 
             translate: function (percent, dir) {
-                return dir < 0 ?
-                    [
-                        {
-                            transform: translate(percent * 100),
-                            zIndex: 0
+                return dir < 0 ? [
+                    {
+                        transform: translate(percent * 100),
+                        zIndex: 0
                         },
-                        {
-                            transform: translate(-30 * (1 - percent)),
-                            zIndex: -1
+                    {
+                        transform: translate(-30 * (1 - percent)),
+                        zIndex: -1
                         }
-                    ] :
-                    [
-                        {
-                            transform: translate(-30 * percent),
-                            zIndex: -1
+                    ] : [
+                    {
+                        transform: translate(-30 * percent),
+                        zIndex: -1
                         },
-                        {
-                            transform: translate(100 * (1 - percent)),
-                            zIndex: 0
+                    {
+                        transform: translate(100 * (1 - percent)),
+                        zIndex: 0
                         }
                     ];
             }

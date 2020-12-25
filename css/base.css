@@ -5,6 +5,12 @@
     height: 250px;
 }
 
+
+body {
+    margin: 0px;
+
+}
+
 .uk-border-rounded {
     border-radius: 5px;
 }
@@ -13,7 +19,133 @@
     color: #ffffff;
 }
 
-/* codigos dago*/
+.uk-grid-collapse > *,
+.uk-grid-column-collapse > * {
+    padding-left: 30px;
+}
+
+.uk-navbar-container {
+    transition: background-color 0.5s ease;
+}
+
+
+
+.uk-overlay-primary {
+    background-image: linear-gradient(-1deg, #ffffff00 0%, #ff5858 70%);
+
+}
+
+
+.uk-card-secondary {
+    background: rgb(254 165 115);
+    color: #fff;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
+}
+
+
+.uk-card-default {
+    background-color: #f0f8ff80;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #9b9b9b;
+    border-radius: 20px;
+}
+
+.uk-button-warning {
+    background-color: #ffffff00;
+    color: #fff;
+    border: 3px solid #f8f8f8;
+}
+
+.uk-card-primary.uk-card-body,
+.uk-card-primary > :not([class*=uk-card-media]),
+.uk-card-secondary.uk-card-body,
+.uk-card-secondary > :not([class*=uk-card-media]),
+.uk-light,
+.uk-offcanvas-bar,
+.uk-overlay-primary,
+.uk-section-primary:not(.uk-preserve-color),
+.uk-section-secondary:not(.uk-preserve-color),
+.uk-tile-primary:not(.uk-preserve-color),
+.uk-tile-secondary:not(.uk-preserve-color) {
+    color: rgb(255 255 255);
+}
+
+}
+
+.uk-animation-zoom-onhover:hover {
+    transition: 1s;
+    transition-property: all;
+    transition-duration: 2s;
+    transform: 2s;
+    transform: translateY(10%);
+}
+
+.skew-right {
+    transform: skewY(4deg);
+}
+
+.skew-left {
+    transform: skewY(-4deg);
+}
+
+.skew {
+    height: 100px;
+    margin-top: -50px;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scroll::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scroll::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #1e87f0;
+    border-radius: 50px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #ff9700;
+    border-radius: 50px;
+    transition: color .3s ease;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+/*Estilos estándar experimentales (Principalmente Firefox)*/
+
+.scroll {
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+/* abro codigos dca*/
+
+.uk-card-defaulta {
+    background-color: #2d2d2d;
+    display: contents "";
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+
 
 .wave {
     position: absolute;
@@ -217,148 +349,15 @@ p {
     margin-right: 20px;
 }
 
-.move-logo {
+.moveg {
     max-width: none;
     position: absolute;
-    left: 3px;
-    top: 50px;
+    left: 840px;
+    top: 300px;
     transform: translate(20px, 20px);
     margin-right: 20px;
 
 }
-
-/*Cierre- continua codigo*/
-
-
-
-
-.uk-grid-collapse > *,
-.uk-grid-column-collapse > * {
-    padding-left: 30px;
-}
-
-.uk-navbar-container {
-    transition: background-color 0.5s ease;
-}
-
-
-
-.uk-overlay-primary {
-    background-image: linear-gradient(-1deg, #ffffff00 0%, #ff5858 70%);
-
-}
-
-
-.uk-card-secondary {
-    background: rgb(254 165 115);
-    color: #fff;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 0%);
-}
-
-
-.uk-card-default {
-    background-color: #f0f8ff80;
-    padding: 10px 30px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px #9b9b9b;
-    border-radius: 20px;
-}
-
-.uk-card-defaulta {
-    background-color: #2d2d2d;
-    display: contents "";
-    padding: 10px 30px;
-    box-sizing: border-box;
-    border-radius: 20px;
-
-}
-
-
-.uk-button-warning {
-    background-color: #ffffff00;
-    color: #fff;
-    border: 3px solid #f8f8f8;
-}
-
-.uk-card-primary.uk-card-body,
-.uk-card-primary > :not([class*=uk-card-media]),
-.uk-card-secondary.uk-card-body,
-.uk-card-secondary > :not([class*=uk-card-media]),
-.uk-light,
-.uk-offcanvas-bar,
-.uk-overlay-primary,
-.uk-section-primary:not(.uk-preserve-color),
-.uk-section-secondary:not(.uk-preserve-color),
-.uk-tile-primary:not(.uk-preserve-color),
-.uk-tile-secondary:not(.uk-preserve-color) {
-    color: rgb(255 255 255);
-}
-
-}
-
-.uk-animation-zoom-onhover:hover {
-    transition: 1s;
-    transition-property: all;
-    transition-duration: 2s;
-    transform: 2s;
-    transform: translateY(10%);
-}
-
-.skew-right {
-    transform: skewY(4deg);
-}
-
-.skew-left {
-    transform: skewY(-4deg);
-}
-
-.skew {
-    height: 100px;
-    margin-top: -50px;
-}
-
-/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
-
-.scroll::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-.scroll::-webkit-scrollbar-button:increment,
-.contenedor::-webkit-scrollbar-button {
-    display: none;
-}
-
-.scroll::-webkit-scrollbar:vertical {
-    width: 5px;
-}
-
-.scroll::-webkit-scrollbar:horizontal {
-    height: 5px;
-}
-
-.scroll::-webkit-scrollbar-thumb {
-    background-color: #1e87f0;
-    border-radius: 50px;
-}
-
-.scroll::-webkit-scrollbar-thumb:hover {
-    background-color: #ff9700;
-    border-radius: 50px;
-    transition: color .3s ease;
-}
-
-.scroll::-webkit-scrollbar-track {
-    background-color: #333;
-}
-
-/*Estilos estándar experimentales (Principalmente Firefox)*/
-
-.scroll {
-    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
-    scrollbar-width: thin;
-}
-
-/* abro codigos dca*/
 
 #Button-Blue {
     display: block;
@@ -425,7 +424,6 @@ p {
     opacity: 1;
 }
 
-/* cierro codigos dca*/
 
 #Button-exit {
     display: block;
@@ -450,7 +448,6 @@ p {
 
 }
 
-/* abro codigos dca*/
 
 #Button-exit:before {
     content: "Leyendo";
@@ -492,7 +489,79 @@ p {
     opacity: 1;
 }
 
-/*Inicio de Menù lateral*/
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 40px;
+    background-color: #f87c5d94;
+    border: 1px solid #ffff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
+/* abrir boton inicial*/
+.Button-ule {
+    content: "Conoce mas";
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background: rgba(3, 169, 244, .7);
+    padding: 70px 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: 50%;
+    border: 0.1px solid #ffffff54;
+    animation: animacion1 2s linear infinite;
+    overflow: hidden;
+    outline: none;
+
+}
+
+.Button-ule:hover {
+    border: 1px solid #ffff;
+    background: rgb(69 37 143 / 63%);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@keyframes animacion1 {
+    0% {
+        box-shadow: 0 0 0 0 rgba(3, 169, 244, .6), 0 0 0 0 rgba(3, 169, 244, .6);
+    }
+
+    30% {
+        box-shadow: 0 0 0 100px rgba(3, 169, 244, , 0), 0 0 0 0 rgba(3, 169, 244, .6);
+    }
+
+    65% {
+        box-shadow: 0 0 0 100px rgba(3, 169, 244, 0), 0 0 0 30px rgba(3, 169, 244, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(233, 30, 99, 0), 0 0 0 30px rgba(233, 30, 99, 0);
+    }
+}
+
+/* cierro boton inicial*/
+
+
+
 /*Menù lateral*/
 #btn-menu {
     display: none;
@@ -520,7 +589,6 @@ p {
     max-width: 250px;
     background: #1c1c1ccf;
     background-color: rgba(28, 28, 28, 0.81);
-
     height: 100vh;
     position: relative;
     transition: all 500ms ease;
@@ -559,24 +627,7 @@ p {
 }
 
 /*Fin de Menù lateral*/
-.whatsapp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 40px;
-    background-color: #f87c5d94;
-    border: 1px solid #ffff;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    z-index: 100;
-}
 
-.whatsapp-icon {
-    margin-top: 13px;
-}
 
 
 /* cierro codigos dca*/
