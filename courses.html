@@ -4,24 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cursos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <title>courses</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Academikon cursos</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-	<header>
-		<div class="contenedor">
-			<h2 class="logotipo">ACADEMIKON</h2>
-			<nav>
-				<a href="index.html" class="activo">Inicio</a>
-				<a href="courses.html">Cursos</a>
-				<a href="tutors.html">Tutorias</a>
-				<a href="homeworks.html">Tareas</a>
-				<a href="institutions.html">Instituciones</a>
-			</nav>
-		</div>
-	</header>
+<body class="scroll">
+    <a href="https://wa.me/573017177781?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    <!-- inicio-->
+    <section>
+        <div class="btn-menu">
+            <div class="uk-position-top" id="top">
+                <nav class="uk-navbar-container uk-navbar-transparent uk-light uk-box-shadow uk-navbar uk-sticky uk-sticky-fixed" uk-navbar="dropbar: false;" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 0" style="position: fixed; top: 0px; width: 1361px;">
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-left">
+                            <label for="btn-menu" class="uk-button uk-button-default uk-border-pill uk-text-capitalize uk-animation-down-onhover">☰</label>
+                            <ul class="uk-navbar-nav">
+                                <input type="checkbox" id="btn-menu">
+                                <div class="container-menu">
+                                    <div class="cont-menu">
+                                        <nav>
+                                            <li>
+                                                <a href="index.html">Academikon</a>
+                                                <a href="tutors.html">Academikon Tutors</a>
+                                                <a href="homeworks.html">Academikon Tareas</a>
+                                                <a href="institutions.html">Academikon Plataforma</a>
+                                                <a href="courses.html">Academikon Cursos</a>
+                                                <a href="https://www.facebook.com/CBG67" target="_blank">Facebook</a>
+                                                <a href="https://www.instagram.com/academikon/" target="_blank">Instagram</a>
+                                            </li>
+                                        </nav>
+                                        <label for="btn-menu">✖️</label>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Center -->
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li class="uk-active uk-animation-down-onhover"><a href="#Inicio" uk-scroll="">Inicio</a></li>
+                            <li class="uk-animation-down-onhover"><a href="#Blog" uk-scroll="">Blog</a></li>
+                            <li class="uk-animation-down-onhover"><a href="#Planes" uk-scroll="">Planes</a></li>
+                            <li class="uk-animation-down-onhover"><a href="#Demo" uk-scroll="">Pruebanos</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right -->
+
+                    <div class="uk-navbar-right uk-margin-small-right">
+                        <div class="uk-navbar-item  uk-visible@m">
+                            <button class="uk-button uk-button-default uk-border-pill uk-text-capitalize uk-animation-down-onhover" uk-switcher-items="next">Registrarme</button>
+                            <button class="uk-button uk-button-default uk-border-pill uk-text-capitalize uk-margin-left uk-animation-down-onhover">Iniciar Sesion</button>
+                        </div>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a class="uk-navbar-item uk-logo" href="#">
+                                        <img class="uk-padding-small" data-src="media/logos/L2.png" width="100" height="100" alt="" uk-img="" src="file:///C:/Users/DAGO%20CASTRO%20ABRIL/Downloads/ACADEMIKON/media/logos/L2.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Config -->
+                    <ul class="uk-hidden" uk-switcher="connect: #navs;animation: uk-animation-fade">
+                        <li class="uk-animation-down-onhover uk-active"><a class="uk-text-capitalize" href="#">Main</a></li>
+                        <li class="uk-animation-down-onhover"><a class="uk-text-capitalize" href="#">SignUp</a></li>
+                        <li class="uk-animation-down-onhover"><a class="uk-text-capitalize" href="#">LogIn</a></li>
+                    </ul>
+                </nav>
+                <div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contacto -->
     <div class="uk-card" style="background-color:#32d296">
@@ -248,8 +314,31 @@
             </div>
         </section>
     </div>
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <div class="widget">
+                        <h4 class="widget-title">Academic On</h4>
+                        <address>Colombia</address>
+                        <div class="social-list">
+                            <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/CBG67" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/academikon" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <p class="copyright clear-float">
+                             ©AcademicOn.SAS. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / footer -->
 </body>
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymus"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
 <script src="main.js"></script>
 
 </html>
